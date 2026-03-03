@@ -9,9 +9,11 @@ async function main() {
   await mongoose.connect('mongodb://127.0.0.1:27017/relationDemo');
 }
 
+// // one to few
 const userSchema=new Schema({
   username:String,
-  address:[{
+  addresses:[{
+      _id:false,
     location:String,
     city:String
   },
@@ -23,11 +25,11 @@ const addUsers = async()=>{
   let user1= new User({
     username:"sherlockholmes",
     addresses:[{
-      locaation:"221B Baker Street",
+      location:"221B Baker Street",
       city:"London",
     }]
   });
-  user1.address.push({
+  user1.addresses.push({
     location:"p2 Wallstreet",
     city:"London",
   });
