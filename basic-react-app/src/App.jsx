@@ -1,6 +1,9 @@
 import './App.css'
+import Title  from './Title';
+
 
 function App() {
-  return <button>hello worlf!</button>
+ return <Title/>;
 }
+
 export default App;
