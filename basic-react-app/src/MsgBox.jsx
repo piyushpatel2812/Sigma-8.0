@@ -1,6 +1,6 @@
 export default function MsgBox({userName,textcolor}){
-    let style = {backgroundColor:"pink"};
+    let styles = {color:textcolor};
     return (
-        <h1> hello,{userName} </h1>
+        <h1 style={styles}> hello {userName} </h1>
     )
 }

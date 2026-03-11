@@ -3,4 +3,7 @@
     border-radius: 24px;
     margin: radius 24px;
     padding: 0 5px 0 5px;
+     width: 45vh;
+    margin: 10px auto;
+    text-align: center;
 }
