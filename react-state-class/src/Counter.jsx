@@ -1,11 +1,11 @@
 import { useState } from "react";
 
 export default function Counter(){
- let [count,setCount]= useState(0);// intialization
+let [count,setCount]= useState(0);// intialization
 
  let incCount = () =>{
     setCount((currCount)=>{
-        return currCount +1;
+      return currCount +1;
     }); // trigger the re-render using callback
 
     setCount((currCount)=>{
@@ -13,13 +13,13 @@ export default function Counter(){
     }); // trigger the re-render
    
     // setCount(25);
-   
- }
+  }
+  
 
-    return(
+ return(
         <div>
     <h3>Count = {count}</h3>
-    <button onClick={incCount}>Increease Count</button>
-        </div>
+    <button onClick={incCount}>Increse Count</button>
+     </div>
     );
 }
