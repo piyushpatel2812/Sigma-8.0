@@ -5,5 +5,9 @@ for(let i=0;i<n;i++){
 }
 return arr;
 }
+function sum(arr){
+    return arr.reduce((sum,curr)=>sum+curr,0);
+}
 
-export {genTicket};
+
+export {genTicket,sum};
