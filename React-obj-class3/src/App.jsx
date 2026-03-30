@@ -5,6 +5,7 @@ import TodoList from './TodoList'
 import Lottery from './Lottery'
 import Ticket from './Ticket'
 import Form from './form';
+import CommentsForm from './CommentsForm'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,7 +20,9 @@ function App() {
 
     {/* <Ticket ticket={[0,1,2]}/> */}
 
-    <Form/>
+    {/* <Form/> */}
+
+    <CommentsForm/>
 
     </>
   )
